@@ -14,17 +14,16 @@ import {
   logOut,
 } from '../lib/fireFunction.js';
 
-let userMuro = '';
-let userIdMuro = '';
-
-stateLogin((user) => {
-  // console.log('stateLogin', user);
-  userMuro = user.displayName;
-  userIdMuro = user.uid;
-  // console.log(userIdMuro);
-});
-
 export const muro = (onNavigate) => {
+  let userMuro = '';
+  let userIdMuro = '';
+
+  stateLogin((user) => {
+    // console.log('stateLogin', user);
+    userMuro = user.displayName;
+    userIdMuro = user.uid;
+    // console.log(userIdMuro);
+  });
   // const localId = ;
   // console.log(localId);
   // maquetación del muro

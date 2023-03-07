@@ -52,7 +52,7 @@ export const register = (onNavigate) => {
   inputEmail.setAttribute('type', 'text');
   inputEmail.setAttribute('class', 'inputsReg');
   inputEmail.setAttribute('id', 'email');
-  inputPass.setAttribute('type', 'text');
+  inputPass.setAttribute('type', 'password');
   inputPass.setAttribute('class', 'inputsReg');
   inputPass.setAttribute('id', 'pass');
   gmailDiv.setAttribute('class', 'gmailDiv');
