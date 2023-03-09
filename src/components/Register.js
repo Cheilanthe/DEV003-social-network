@@ -36,7 +36,7 @@ export const register = (onNavigate) => {
   form.setAttribute('class', 'form');
   form.setAttribute('id', 'form');
   btnDiv.setAttribute('class', 'btnDiv');
-  logo.setAttribute('src', '/img/logo.png');
+  logo.setAttribute('src', 'https://github.com/Cheilanthe/DEV003-social-network/blob/main/src/img/logo.png?raw=true');
   logo.setAttribute('alt', 'logoAlt');
   logo.setAttribute('class', 'logo');
   title.setAttribute('class', 'title');

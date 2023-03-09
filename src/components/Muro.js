@@ -14,17 +14,15 @@ import {
   logOut,
 } from '../lib/fireFunction.js';
 
-let userMuro = '';
-let userIdMuro = '';
-
-stateLogin((user) => {
-  // console.log('stateLogin', user);
-  userMuro = user.displayName;
-  userIdMuro = user.uid;
-  // console.log(userIdMuro);
-});
-
 export const muro = (onNavigate) => {
+  let userMuro = '';
+  let userIdMuro = '';
+  stateLogin((user) => {
+    // console.log('stateLogin', user);
+    userMuro = user.displayName;
+    userIdMuro = user.uid;
+    // console.log(userIdMuro);
+  });
   // const localId = ;
   // console.log(localId);
   // maquetación del muro
@@ -53,7 +51,7 @@ export const muro = (onNavigate) => {
 
   HomeDivMuro.setAttribute('class', 'HomeDivMuro');
   logoDiv.setAttribute('class', 'logoMuro');
-  logo.setAttribute('src', '/img/logo.png');
+  logo.setAttribute('src', 'https://github.com/Cheilanthe/DEV003-social-network/blob/main/src/img/logo.png?raw=true');
   logo.setAttribute('alt', 'logoAlt');
   title.setAttribute('class', 'titleMuro');
   divContainer.setAttribute('class', 'divContainer');
@@ -68,13 +66,13 @@ export const muro = (onNavigate) => {
   buttonUpdate.setAttribute('class', 'buttonUpdate');
   buttonEdCancel.setAttribute('class', 'buttonEdCancel');
   buttonHome.setAttribute('class', 'buttonHome');
-  logoButton.setAttribute('src', '/img/pet-love.png');
+  logoButton.setAttribute('src', 'https://github.com/Cheilanthe/DEV003-social-network/blob/main/src/img/pet-love.png?raw=true');
   logoButton.setAttribute('alt', 'logoAlt');
   buttonProfile.setAttribute('class', 'buttonProfile');
-  logoProfile.setAttribute('src', '/img/Max.jpeg');
+  logoProfile.setAttribute('src', 'https://github.com/Cheilanthe/DEV003-social-network/blob/main/src/img/Max.jpeg?raw=true');
   logoProfile.setAttribute('alt', 'logoAlt');
   buttonLogOut.setAttribute('class', 'buttonLogOut');
-  logoOut.setAttribute('src', '/img/logOut.png');
+  logoOut.setAttribute('src', 'https://github.com/Cheilanthe/DEV003-social-network/blob/main/src/img/logOut.png?raw=true');
   logoOut.setAttribute('alt', 'logoAlt');
   footerCont.setAttribute('class', 'footerCont');
 
@@ -217,14 +215,14 @@ export const muro = (onNavigate) => {
         <p class = 'postUser' id= ${doc.id}>${docData.postUser}</p>
         <div class = 'likeDiv'>
           <button class = 'btnLike' id=${doc.id}>
-            <img src='img/mascotas.png' alt='logolike'>
+            <img src='https://github.com/Cheilanthe/DEV003-social-network/blob/main/src/img/mascotas.png?raw=true' alt='logolike'>
           </button>
           <p class = 'numLike'>${docData.like.length}</p>
           ${isAuthor ? `<button class = 'btnEdit' id=${doc.id}>
-          <img src='img/lapiz.png' alt='logolike'>
+          <img src='https://github.com/Cheilanthe/DEV003-social-network/blob/main/src/img/lapiz.png?raw=true' alt='logolike'>
           </button>
           <button class = 'btnDelete' id=${doc.id}>
-          <img src='img/eliminar.png' alt='logolike'>
+          <img src='https://github.com/Cheilanthe/DEV003-social-network/blob/main/src/img/eliminar.png?raw=true' alt='logolike'>
           </button>` : ''}
         </div>
       </div>`;

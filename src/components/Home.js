@@ -8,7 +8,7 @@ export const home = (onNavigate) => {
   const logoDiv = document.createElement('div');
   logoDiv.setAttribute('class', 'logoDiv');
   const logo = document.createElement('img');
-  logo.setAttribute('src', '/img/logo.png');
+  logo.setAttribute('src', 'https://github.com/Cheilanthe/DEV003-social-network/blob/main/src/img/logo.png?raw=true');
   logo.setAttribute('alt', 'logoAlt');
   logo.setAttribute('class', 'logo');
   const btnDiv = document.createElement('div');
