@@ -46,7 +46,7 @@ Posteriormente, se realizaron los protoripos de Alta fidelidad.
 
 ## 5. Proyecto desplegado
 Para desplegar la página web se utilizo la herramienta de Hosting de Firabase. 
-![PETGRAM](https://social-network-a6b7f.web.app/)
+[PETGRAM](https://social-network-a6b7f.web.app/)
 
 ## 6. Puebas de Usabilidad
 Se realizó una encuesta a las personas que utilizaron la aplicación a fin de encontrar mejoras en el diseño de la página web. Los comentarios que destacaron fueron:
